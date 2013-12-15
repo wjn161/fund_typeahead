@@ -24,7 +24,6 @@ var dropdown=(function($){
         },
         hover:function(){
             this.$item.on('mouseenter',function(){
-
                 $(this).addClass('over')
             }).on('mouseout',function(){
                     $(this).removeClass('over');

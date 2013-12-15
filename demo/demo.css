@@ -21,6 +21,7 @@
 .search-box{
     margin-left: 250px;
     text-align: center;
+
 }
 .text-query
 {
@@ -74,7 +75,7 @@
     cursor: pointer;
     float: left;
     display: inline;
-    width: 81px;
+    width: 80px;
 }
 
 .search-type-menu ul
@@ -91,7 +92,7 @@
 .search-type-menu ul li
 {
     height: 29px;
-    width: 81px;
+    width: 80px;
     border: 1px solid #d0d0d0;
     border-top: 0;
     background-color: #fff;
@@ -101,4 +102,86 @@
 {
     color: #e77802;
     background-color: #fff6dd;
+}
+
+
+.search-typeahead-wrap
+{
+    position: relative;
+    border: 1px solid #c1c1c1;
+    border-top: none;
+    background: #fff;
+    width: 312px;
+    z-index: 3000;
+    left: 0;
+    top:0;
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    text-align: left;
+}
+.search-typeahead-wrap .search-typeahead-top,.search-typeahead-wrap .search-typeahead-bottom
+{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 14px;
+    overflow: hidden;
+}
+.search-typeahead-wrap .search-typeahead-item
+{
+    font-size: 14px;
+    width: 310px;
+}
+.search-typeahead-wrap .search-typeahead-item table{
+    width: 310px;
+}
+.search-typeahead-wrap .search-typeahead-item table tr{
+    cursor: pointer;
+    line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+    display: table-row;
+}
+.search-typeahead-wrap .search-typeahead-item table tr:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.search-typeahead-wrap .search-typeahead-item table tr td {
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.search-typeahead-wrap .search-typeahead-top
+{
+    color: #000;
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px dashed #eee;
+    font-size: 14px;
+}
+.search-typeahead-wrap .search-typeahead-bottom
+{
+    font-size: 12px;
+    border-top:1px dashed #eee;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+.search-typeahead-wrap a
+{
+    display: inline;
+    text-decoration: none;
+    color:#666;
+    margin-right: 10px;
+}
+.search-typeahead-wrap a:hover
+{
+    display: inline;
+    text-decoration: underline;
+    color:#e77802;
+
 }
