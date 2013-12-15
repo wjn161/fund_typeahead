@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <title>Demos</title>
+    <link href="../libs/reset.css" rel="stylesheet"/>
+    <link href="../src/css/public.css" rel="stylesheet"/>
+    <link href="../src/css/fund_typeahead.css" rel="stylesheet"/>
+    <link href="demo.css" rel="stylesheet"/>
+    <script src="../libs/jquery-1.10.2.min.js"></script>
+    <script src="../src/js/fund_typeahead.js"></script>
+    <script src="demo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Demo</h1>
+            </div>
+                <div class="search-box">
+                <div class="search-type">
+                    <h3 id="txtResult">基金</h3>
+                    <div class="search-type-menu" style="display: none">
+                        <ul>
+                            <li data-type="fund">基金</li>
+                            <li data-type="manager">基金经理</li>
+                            <li data-type="company">基金公司</li>
+                            <li data-type="stock">股票</li>
+                            <li data-type="bar">基金吧</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-wrap">
+                    <input class="text-query" type="text" id="text-query" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" >
+                </div>
+                <input type="button" class="submit-btn" value="搜索">
+                </div>
+            </div>
+    </div>
+</body>
+</html>
