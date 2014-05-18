@@ -1,4 +1,3 @@
-
 var dropdown=(function($){
     function Dropdown(){
         this.$text=$('#txtResult');

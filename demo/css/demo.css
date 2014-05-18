@@ -21,7 +21,7 @@
 .search-box{
     margin-left: 250px;
     text-align: center;
-
+    display: inline-block;
 }
 .text-query
 {
@@ -32,13 +32,16 @@
     line-height: 24px;
     border: 1px solid #ccc;
     outline: none;
+    position:relative;
+    top:0px;
+    *top:-1px;
 }
 .search-type
 {
     float: left;
     display:inline;
     position: relative;
-    width: 80px;
+    width: 90px;
     height: 32px;
     border: 1px solid #c1c1c1;
     border-right:0;
@@ -75,7 +78,9 @@
     cursor: pointer;
     float: left;
     display: inline;
-    width: 80px;
+    width: 90px;
+    margin-left: -3px;
+    background: url(../images/dropdown.png) 75px 3px no-repeat;
 }
 
 .search-type-menu ul
@@ -98,12 +103,11 @@
     background-color: #fff;
     line-height: 29px;
 }
-.search-type-menu ul li.over
+.search-type-menu ul li.over,.search-typeahead-wrap .search-typeahead-item table tr .over
 {
     color: #e77802;
     background-color: #fff6dd;
 }
-
 
 .search-typeahead-wrap
 {
@@ -115,6 +119,7 @@
     z-index: 3000;
     left: 0;
     top:0;
+    *top:-2px;
     -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
     -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
@@ -143,11 +148,6 @@
     overflow: hidden;
     display: table-row;
 }
-.search-typeahead-wrap .search-typeahead-item table tr:hover{
-    background-color: #ddd;
-    color: #000;
-}
-
 .search-typeahead-wrap .search-typeahead-item table tr td {
     padding: 0 5px;
     font-size: 14px;
@@ -183,5 +183,4 @@
     display: inline;
     text-decoration: underline;
     color:#e77802;
-
 }
